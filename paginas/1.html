@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>El Centollo – Reservas</title>
+  <style>
+    body {
+      background-color: #c8a27c; /* dorado/beige principal */
+      font-family: 'Montserrat', sans-serif;
+      color: #4b2e1e; /* marrón oscuro para texto */
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      background-color: #ffffff;
+      padding: 20px;
+    }
+    header img {
+      max-width: 400px;
+      height: auto;
+    }
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+      color: #4b2e1e;
+      letter-spacing: 2px;
+    }
+    form {
+      max-width: 700px;
+      margin: auto;
+      background-color: #fff8f0; /* fondo claro elegante */
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(75,46,30,0.5);
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      color: #6b4226;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #8b5e3c;
+      border-radius: 4px;
+      margin-bottom: 15px;
+      background-color: #ffffff;
+      color: #4b2e1e;
+    }
+    input[type="submit"] {
+      background-color: #8b5e3c; /* botón marrón */
+      color: #ffffff;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    input[type="submit"]:hover {
+      background-color: #6b4226; /* tono más oscuro al pasar */
+    }
+  </style>
+</head>
+<body>
+  <form class="reservas-form" action="#" method="post">
+  <label for="nombre">Nombre completo</label>
+  <input type="text" id="nombre" name="nombre" required />
+
+  <label for="email">Correo electrónico</label>
+  <input type="email" id="email" name="email" required />
+
+  <label for="telefono">Teléfono</label>
+  <input type="text" id="telefono" name="telefono" required />
+
+  <label for="fecha">Fecha de reserva</label>
+  <input type="date" id="fecha" name="fecha" required />
+
+  <label for="hora">Hora deseada</label>
+  <input type="time" id="hora" name="hora" required />
+
+  <label for="personas">Número de personas</label>
+  <select id="personas" name="personas" required>
+    <option value="">Selecciona</option>
+    <option>1</option><option>2</option><option>3</option><option>4</option>
+    <option>5</option><option>6</option><option>7</option><option>8</option>
+    <option>9</option><option>10</option>
+  </select>
+
+  <label for="ocasion">Tipo de ocasión</label>
+  <select id="ocasion" name="ocasion">
+    <option value="">Selecciona</option>
+    <option>Cena familiar</option>
+    <option>Evento especial</option>
+    <option>Negocios</option>
+    <option>Otra</option>
+  </select>
+
+  <label for="comentarios">Observaciones / solicitudes especiales</label>
+  <textarea id="comentarios" name="comentarios"></textarea>
+
+  <button type="submit" class="btn-reservar">Reservar</button>
+</form>
+
+
+    <label for="comentarios">Comentarios adicionales</label>
+    <textarea id="comentarios" name="comentarios"></textarea>
+
+    <input type="submit" value="Reservar">
+  </form>
+</body>
+</html>

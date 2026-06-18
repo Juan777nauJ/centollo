@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Créditos – El Centollo</title>
+  <link rel="stylesheet" href="../css/styles.css"/>
+  <style>
+    .creditos-page {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 30px 80px;
+      text-align: center;
+    }
+
+    .creditos-page h2 {
+      font-size: 1.5rem;
+      color: #111;
+      margin-bottom: 4px;
+      font-family: 'Georgia', serif;
+      letter-spacing: 1px;
+    }
+
+    .creditos-subtitle {
+      font-size: 0.75rem;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #999;
+      margin-bottom: 12px;
+    }
+
+    .creditos-underline {
+      width: 50px;
+      height: 2px;
+      background: #888;
+      margin: 0 auto 50px;
+    }
+
+    .creditos-grid {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .credito-card {
+      flex: 1;
+      min-width: 240px;
+      max-width: 320px;
+      border: 1px solid #e8e8e8;
+      padding: 36px 28px 32px;
+      position: relative;
+      background: #fff;
+    }
+
+    .credito-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: #333;
+    }
+
+    .credito-initials {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #e8e4de;
+      color: #444;
+      font-family: 'Georgia', serif;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      letter-spacing: 1px;
+    }
+
+    .credito-name {
+      font-family: 'Georgia', serif;
+      font-size: 1.05rem;
+      color: #111;
+      margin-bottom: 6px;
+      font-weight: normal;
+    }
+
+    .credito-role {
+      font-size: 0.68rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 20px;
+    }
+
+    .credito-divider {
+      width: 30px;
+      height: 1px;
+      background: #ddd;
+      margin: 0 auto 18px;
+    }
+
+    .credito-desc {
+      font-size: 0.83rem;
+      color: #777;
+      line-height: 1.8;
+    }
+
+    .creditos-nota {
+      margin-top: 52px;
+      font-size: 0.78rem;
+      color: #aaa;
+      letter-spacing: 1px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <img src="../img/Logo.png" alt="El Centollo" class="site-logo"/>
+</header>
+
+<!-- NAVBAR -->
+<nav>
+  <ul>
+    <li><a href="../index.html">Inicio</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+    <li><a href="ubicacion.html">Ubicación</a></li>
+    <li><a href="reservas.html">Reservas</a></li>
+    <li><a href="creditos.html" class="active">Créditos</a></li>
+  </ul>
+</nav>
+
+<!-- CONTENIDO -->
+<div class="creditos-page">
+  <p class="creditos-subtitle">Proyecto Académico</p>
+  <h2>Créditos</h2>
+  <div class="creditos-underline"></div>
+
+  <div class="creditos-grid">
+
+    <div class="credito-card">
+      <div class="credito-initials" style="overflow:hidden; padding:0;">
+        <img src="../img/DB.jpg" alt="Dana Sofía Blanco Castiblanco" style="width:100%; height:100%; object-fit:cover; border-radius:50%;"/>
+      </div>
+      <p class="credito-name">Dana Sofía Blanco Castiblanco</p>
+      <p class="credito-role">Desarrolladora Web</p>
+      <div class="credito-divider"></div>
+      <p class="credito-desc">
+        Participó en el diseño visual, la estructura de páginas y la experiencia de usuario del sitio, aportando creatividad y criterio estético al proyecto.
+      </p>
+    </div>
+
+    <div class="credito-card">
+      <div class="credito-initials" style="overflow:hidden; padding:0;">
+        <img src="../img/JP.jpg" alt="Juan David Pineda Arteaga" style="width:100%; height:100%; object-fit:cover; border-radius:50%;"/>
+      </div>
+      <p class="credito-name">Juan David Pineda Arteaga</p>
+      <p class="credito-role">Desarrollador Web</p>
+      <div class="credito-divider"></div>
+      <p class="credito-desc">
+        Responsable del desarrollo frontend, la integración de funcionalidades interactivas y la implementación técnica general del sitio web.
+      </p>
+    </div>
+
+  </div>
+
+  <p class="creditos-nota">
+    Proyecto desarrollado como parte del programa académico de Programación Web — I.E.D. Entre Nubes S.O. · Bogotá, Colombia
+  </p>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-icons-row">
+    <div class="footer-icon-item">
+      
+      <h4>Más de 100 años</h4>
+      <p>Desde 1911 trabajando con el mejor producto del mar</p>
+    </div>
+    <div class="footer-icon-item">
+      
+      <h4>El producto más fresco</h4>
+      <p>Pescados y mariscos directos de la lonja</p>
+    </div>
+    <div class="footer-icon-item">
+     
+      <h4>Ahumados artesanales</h4>
+      <p>Descubre nuestros procesos de ahumado</p>
+    </div>
+    <div class="footer-icon-item">
+      
+      <h4>La Tienda</h4>
+      <p>También te servimos en nuestra tienda física</p>
+    </div>
+    <div class="footer-icon-item">
+  
+      <h4>Seleccionamos por ti</h4>
+      <p>Despreocúpate y disfruta del mejor género del mar</p>
+    </div>
+  </div>
+  <div class="footer-bottom-bar">
+    <div class="footer-contact-info">
+      <span><span class="fc-icon">📍</span> Carrera 1 #93-50 Chicó Alto, Bogotá</span>
+      <span><span class="fc-icon">📞</span> Tel: (57) 316 690 0508</span>
+      <span><span class="fc-icon">✉️</span> servicioalcliente@elcentollo.com.co</span>
+    </div>
+    <div class="footer-socials">
+      <a href="#" class="soc-fb">f</a>
+      <a href="#" class="soc-tw">t</a>
+      <a href="#" class="soc-wa">w</a>
+      <a href="#" class="soc-tg">tg</a>
+      <a href="#" class="soc-sh">&#8679;</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
